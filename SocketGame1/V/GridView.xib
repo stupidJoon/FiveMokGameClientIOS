@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GridView" customModule="SocketGame1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-wE-1F3">
+                    <rect key="frame" x="499.5" y="0.0" width="1" height="1000"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="jKa-gv-RDp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tiw-dD-Cu3">
+                    <rect key="frame" x="0.0" y="499.5" width="1000" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WPd-02-cNk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maj-tV-S08" customClass="CircleView" customModule="SocketGame1" customModuleProvider="target">
+                    <rect key="frame" x="450" y="450" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="maj-tV-S08" secondAttribute="height" multiplier="1:1" id="7sC-2U-TPO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <nil key="value"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Tiw-dD-Cu3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1Ze-Hf-htr"/>
+                <constraint firstItem="Tiw-dD-Cu3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8ab-yI-uYT"/>
+                <constraint firstItem="maj-tV-S08" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Z2-kQ-lG3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Tiw-dD-Cu3" secondAttribute="trailing" id="LNq-AI-KmG"/>
+                <constraint firstItem="Tiw-dD-Cu3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vjm-i4-Eju"/>
+                <constraint firstItem="AOI-wE-1F3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="agt-08-fhO"/>
+                <constraint firstAttribute="bottom" secondItem="AOI-wE-1F3" secondAttribute="bottom" id="dMx-q0-GTO"/>
+                <constraint firstItem="maj-tV-S08" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.1" id="dsf-ui-QBe"/>
+                <constraint firstItem="AOI-wE-1F3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eV3-6T-ewa"/>
+                <constraint firstItem="maj-tV-S08" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="taU-kc-hx1"/>
+                <constraint firstItem="AOI-wE-1F3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yr7-Nf-Ap1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.59999999999999" y="153.82308845577214"/>
+        </view>
+    </objects>
+</document>

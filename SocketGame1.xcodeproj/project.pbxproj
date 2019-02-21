@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D2B54622210E3FD003DC921 /* MainGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B54612210E3FD003DC921 /* MainGameViewController.swift */; };
+		2D2B54662210E699003DC921 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B54652210E699003DC921 /* GridView.swift */; };
+		2D2B54682210E6A9003DC921 /* GridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B54672210E6A9003DC921 /* GridView.xib */; };
+		2D2B546A2210EB0B003DC921 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B54692210EB0B003DC921 /* CircleView.swift */; };
+		2D2B546C22110814003DC921 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B546B22110814003DC921 /* GameModel.swift */; };
+		2D2B546E221118A4003DC921 /* SingleTon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B546D221118A4003DC921 /* SingleTon.swift */; };
+		2DB5DC4E220E9062000F943C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5DC4D220E9062000F943C /* AppDelegate.swift */; };
+		2DB5DC55220E9063000F943C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5DC54220E9063000F943C /* Assets.xcassets */; };
+		2DB5DC58220E9063000F943C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5DC56220E9063000F943C /* LaunchScreen.storyboard */; };
+		2DB5DC64220E9127000F943C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5DC62220E9127000F943C /* StartViewController.swift */; };
+		2DB5DC65220E9127000F943C /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB5DC63220E9127000F943C /* StartViewController.xib */; };
+		2DD1DC81220EA867007D0967 /* SelectRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1DC7F220EA867007D0967 /* SelectRoomTableViewCell.swift */; };
+		2DD1DC82220EA867007D0967 /* SelectRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD1DC80220EA867007D0967 /* SelectRoomTableViewCell.xib */; };
+		2DFABD22220EE4C000952AB2 /* GameSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFABD21220EE4C000952AB2 /* GameSocket.swift */; };
+		FA9EF9E7B4C5768448FFC52F /* Pods_SocketGame1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4513801E736DE817A5B0EB4A /* Pods_SocketGame1.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D2B54612210E3FD003DC921 /* MainGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameViewController.swift; sourceTree = "<group>"; };
+		2D2B54652210E699003DC921 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		2D2B54672210E6A9003DC921 /* GridView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridView.xib; sourceTree = "<group>"; };
+		2D2B54692210EB0B003DC921 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		2D2B546B22110814003DC921 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		2D2B546D221118A4003DC921 /* SingleTon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTon.swift; sourceTree = "<group>"; };
+		2DB5DC4A220E9062000F943C /* SocketGame1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketGame1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB5DC4D220E9062000F943C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DB5DC54220E9063000F943C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DB5DC57220E9063000F943C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DB5DC59220E9063000F943C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB5DC62220E9127000F943C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		2DB5DC63220E9127000F943C /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		2DD1DC7F220EA867007D0967 /* SelectRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTableViewCell.swift; sourceTree = "<group>"; };
+		2DD1DC80220EA867007D0967 /* SelectRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectRoomTableViewCell.xib; sourceTree = "<group>"; };
+		2DFABD21220EE4C000952AB2 /* GameSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSocket.swift; sourceTree = "<group>"; };
+		4513801E736DE817A5B0EB4A /* Pods_SocketGame1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketGame1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D179B38214AFB7A00C6BB5B /* Pods-SocketGame1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketGame1.release.xcconfig"; path = "Target Support Files/Pods-SocketGame1/Pods-SocketGame1.release.xcconfig"; sourceTree = "<group>"; };
+		923E9B4273DB66AE1777109A /* Pods-SocketGame1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketGame1.debug.xcconfig"; path = "Target Support Files/Pods-SocketGame1/Pods-SocketGame1.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DB5DC47220E9062000F943C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9EF9E7B4C5768448FFC52F /* Pods_SocketGame1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DB5DC41220E9062000F943C = {
+			isa = PBXGroup;
+			children = (
+				2DB5DC4C220E9062000F943C /* SocketGame1 */,
+				2DB5DC4B220E9062000F943C /* Products */,
+				48404484C161C9407A4E9CBB /* Pods */,
+				E78E5B5F31CA33DD583479B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2DB5DC4B220E9062000F943C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DB5DC4A220E9062000F943C /* SocketGame1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DB5DC4C220E9062000F943C /* SocketGame1 */ = {
+			isa = PBXGroup;
+			children = (
+				2DB5DC61220E910C000F943C /* M */,
+				2DB5DC60220E9108000F943C /* V */,
+				2DB5DC5F220E9103000F943C /* C */,
+				2DB5DC4D220E9062000F943C /* AppDelegate.swift */,
+				2DB5DC54220E9063000F943C /* Assets.xcassets */,
+				2DB5DC56220E9063000F943C /* LaunchScreen.storyboard */,
+				2DB5DC59220E9063000F943C /* Info.plist */,
+			);
+			path = SocketGame1;
+			sourceTree = "<group>";
+		};
+		2DB5DC5F220E9103000F943C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				2DB5DC62220E9127000F943C /* StartViewController.swift */,
+				2DD1DC7F220EA867007D0967 /* SelectRoomTableViewCell.swift */,
+				2D2B54612210E3FD003DC921 /* MainGameViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		2DB5DC60220E9108000F943C /* V */ = {
+			isa = PBXGroup;
+			children = (
+				2DB5DC63220E9127000F943C /* StartViewController.xib */,
+				2DD1DC80220EA867007D0967 /* SelectRoomTableViewCell.xib */,
+				2D2B54672210E6A9003DC921 /* GridView.xib */,
+				2D2B54652210E699003DC921 /* GridView.swift */,
+				2D2B54692210EB0B003DC921 /* CircleView.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		2DB5DC61220E910C000F943C /* M */ = {
+			isa = PBXGroup;
+			children = (
+				2DFABD21220EE4C000952AB2 /* GameSocket.swift */,
+				2D2B546B22110814003DC921 /* GameModel.swift */,
+				2D2B546D221118A4003DC921 /* SingleTon.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		48404484C161C9407A4E9CBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				923E9B4273DB66AE1777109A /* Pods-SocketGame1.debug.xcconfig */,
+				7D179B38214AFB7A00C6BB5B /* Pods-SocketGame1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E78E5B5F31CA33DD583479B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4513801E736DE817A5B0EB4A /* Pods_SocketGame1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DB5DC49220E9062000F943C /* SocketGame1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DB5DC5C220E9063000F943C /* Build configuration list for PBXNativeTarget "SocketGame1" */;
+			buildPhases = (
+				2632929B7A675EE2CC4DA1D3 /* [CP] Check Pods Manifest.lock */,
+				2DB5DC46220E9062000F943C /* Sources */,
+				2DB5DC47220E9062000F943C /* Frameworks */,
+				2DB5DC48220E9062000F943C /* Resources */,
+				EB919F5DB15ED8566B04FF58 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketGame1;
+			productName = SocketGame1;
+			productReference = 2DB5DC4A220E9062000F943C /* SocketGame1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DB5DC42220E9062000F943C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "유준상";
+				TargetAttributes = {
+					2DB5DC49220E9062000F943C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2DB5DC45220E9062000F943C /* Build configuration list for PBXProject "SocketGame1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DB5DC41220E9062000F943C;
+			productRefGroup = 2DB5DC4B220E9062000F943C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DB5DC49220E9062000F943C /* SocketGame1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DB5DC48220E9062000F943C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD1DC82220EA867007D0967 /* SelectRoomTableViewCell.xib in Resources */,
+				2D2B54682210E6A9003DC921 /* GridView.xib in Resources */,
+				2DB5DC58220E9063000F943C /* LaunchScreen.storyboard in Resources */,
+				2DB5DC55220E9063000F943C /* Assets.xcassets in Resources */,
+				2DB5DC65220E9127000F943C /* StartViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2632929B7A675EE2CC4DA1D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocketGame1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB919F5DB15ED8566B04FF58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocketGame1/Pods-SocketGame1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocketGame1/Pods-SocketGame1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DB5DC46220E9062000F943C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2B546A2210EB0B003DC921 /* CircleView.swift in Sources */,
+				2D2B546E221118A4003DC921 /* SingleTon.swift in Sources */,
+				2DB5DC4E220E9062000F943C /* AppDelegate.swift in Sources */,
+				2DB5DC64220E9127000F943C /* StartViewController.swift in Sources */,
+				2DFABD22220EE4C000952AB2 /* GameSocket.swift in Sources */,
+				2D2B54662210E699003DC921 /* GridView.swift in Sources */,
+				2D2B546C22110814003DC921 /* GameModel.swift in Sources */,
+				2D2B54622210E3FD003DC921 /* MainGameViewController.swift in Sources */,
+				2DD1DC81220EA867007D0967 /* SelectRoomTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DB5DC56220E9063000F943C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DB5DC57220E9063000F943C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DB5DC5A220E9063000F943C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DB5DC5B220E9063000F943C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DB5DC5D220E9063000F943C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923E9B4273DB66AE1777109A /* Pods-SocketGame1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBUATYW853;
+				INFOPLIST_FILE = SocketGame1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = restquest.ml.SocketGame1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DB5DC5E220E9063000F943C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D179B38214AFB7A00C6BB5B /* Pods-SocketGame1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBUATYW853;
+				INFOPLIST_FILE = SocketGame1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = restquest.ml.SocketGame1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DB5DC45220E9062000F943C /* Build configuration list for PBXProject "SocketGame1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB5DC5A220E9063000F943C /* Debug */,
+				2DB5DC5B220E9063000F943C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DB5DC5C220E9063000F943C /* Build configuration list for PBXNativeTarget "SocketGame1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB5DC5D220E9063000F943C /* Debug */,
+				2DB5DC5E220E9063000F943C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DB5DC42220E9062000F943C /* Project object */;
+}
