@@ -12,6 +12,11 @@ import SocketIO
 
 class GameModel {
     static var isMyTurn = false
+    static var myStoneColor = "black"
+    
+    static func setMyStoneColor(stoneColor: String) {
+        GameModel.myStoneColor = stoneColor
+    }
     
     static func prepareGame(socket: SocketIOClient) {
         socket.on("turn", callback: { _, _ in

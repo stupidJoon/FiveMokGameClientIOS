@@ -14,11 +14,16 @@ class MainGameViewController: UIViewController {
     var gridArr: [[UIView]] = [[], [], [], [], [], [], [], [], [], []]
     var roomIndex: Int!
     
+    @objc func winFiveMok(_ notification: NSNotification) {
+        winGame(message: "5목을 완성했습니다")
+    }
+    
+    @objc func loseFiveMok(_ notification: NSNotification) {
+        loseGame(message: "상대방이 5목을 완성했습니다")
+    }
+    
     @objc func disconnectedOppositePlayer(_ notification: NSNotification) {
-        let alert = UIAlertController(title: "상대방이 나갔습니다", message: "당신의 승리!", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+        winGame(message: "상대방이 나갔습니다")
     }
     
     @objc func setNavigationTitle(_ notification: NSNotification) {
@@ -72,6 +77,24 @@ class MainGameViewController: UIViewController {
         GameModel.isMyTurn = false
     }
     
+    func winGame(message: String) {
+        navigationItem.title = "승리"
+        GameModel.isMyTurn = false
+        let alert = UIAlertController(title: "승리했습니다!", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func loseGame(message: String) {
+        navigationItem.title = "패배"
+        GameModel.isMyTurn = false
+        let alert = UIAlertController(title: "패배했습니다!", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
     func setupLayout() {
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
         let navigationBarHeight = navigationController?.navigationBar.frame.height ?? 0
@@ -108,6 +131,8 @@ class MainGameViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(presentAlert(_:)), name: Notification.Name("presentAlert"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(setNavigationTitle(_:)), name: Notification.Name("setNavigationTitle"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(disconnectedOppositePlayer(_:)), name: Notification.Name("disconnectedOppositePlayer"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(winFiveMok(_:)), name: Notification.Name("winFiveMok"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(loseFiveMok(_:)), name: Notification.Name("loseFiveMok"), object: nil)
     }
     
     override func viewDidLoad() {

@@ -40,6 +40,7 @@ class GameSocket {
                 let alert = UIAlertController(title: "게임 시작!", message: "게임을 시작했습니다. 당신의 바둑돌 색갈은 \(response["stone"] as! String) 입니다", preferredStyle: .alert)
                 let action = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alert.addAction(action)
+                GameModel.setMyStoneColor(stoneColor: response["stone"] as! String)
                 NotificationCenter.default.post(name: Notification.Name(rawValue: "presentAlert"), object: nil, userInfo: ["alert": alert])
                 NotificationCenter.default.post(name: Notification.Name(rawValue: "setNavigationTitle"), object: nil, userInfo: ["title": "흑돌 차례"])
             }
@@ -56,6 +57,15 @@ class GameSocket {
         })
         roomSocketDic[roomIndex]?.on("disconnectedOppositePlayer", callback: { _, _ in
             NotificationCenter.default.post(name: Notification.Name(rawValue: "disconnectedOppositePlayer"), object: nil)
+        })
+        roomSocketDic[roomIndex]?.on("winFiveMok", callback: { data, _ in
+            let response = data[0] as! Dictionary<String, Any>
+            if (response["winColor"] as! String == GameModel.myStoneColor) {
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "winFiveMok"), object: nil)
+            }
+            else {
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "loseFiveMok"), object: nil)
+            }
         })
         roomSocketDic[roomIndex]?.connect()
     }
